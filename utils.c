@@ -3,12 +3,11 @@
 /**
  * is_printable - Gotten if a char is printable
  * @c: Character to be evaluated.
- *
- * Return:  0 
+ * Return: return 0 
  */
 int is_printable(char c)
 {
-	if (a >= 32 && a < 127)
+	if (c >= 32 && c < 127)
 		return (1);
 
 	return (0);
@@ -19,7 +18,7 @@ int is_printable(char c)
  * @buffer: Array of char.
  * @i: Index start to append.
  * @ascii_code: ASSCI CODE.
- * Return: 3
+ * Return: return 3
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
@@ -40,8 +39,7 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 /**
  * is_digit - cross check if the char is a digit
  * @c: Char to evaluate
- *
- * Return: 0 
+ * Return: return 0 
  */
 int is_digit(char c)
 {
@@ -71,8 +69,7 @@ long int convert_size_number(long int num, int size)
 /**
  * convert_size_unsgnd - Cast a number to exact size
  * @num: number to cast.
- * @size: number indicating the type to cast
- *
+ * @size: number indicating the type to cast.
  * Return: Casted value of number which is an unsigned int.
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
